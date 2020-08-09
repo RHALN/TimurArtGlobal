@@ -7,9 +7,9 @@ main {
 }
 
 main .main-container {
-  width: 1350px;
+  width: 1000px;
   overflow: hidden;
-  padding: 30px 60px;
+  padding: 0px 40px;
 }
 
 main .gallery-container {
@@ -94,4 +94,8 @@ main .gal-2 img{
   color: white;
   /* font-weight: bold; */
   font-size: 1.6rem;
+}
+
+.myH1 {
+  margin: 0;
 }
