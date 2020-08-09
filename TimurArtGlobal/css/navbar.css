@@ -16,7 +16,7 @@ a:hover {
 nav {
   font-family: "Helvetica";
   width: 100%;
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -25,7 +25,7 @@ nav {
 }
 
 nav .nav-container {
-  width: 1400px;
+  width: 1270px;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -57,7 +57,7 @@ nav .nav-list li .nav-link {
   text-decoration: none;
   color: #444434;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 .nav-active {
@@ -67,8 +67,8 @@ nav .nav-list li .nav-link {
 }
 
 .nav-logo img {
-  width: 70px;
-  height: 60px;
+  width: 60px;
+  height: 50px;
 }
 
 /* FONT */
