@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/Logo merah.png" type="image/x-icon">
+  <title>Gallery</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- CSS CUSTOM -->
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<body>
+  <nav class="shadow mb-5 bg-white rounded">
+    <div class="nav-container">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">HOME</a> </li>
+        <li><a href="news.html" class="nav-link">NEWS / EVENT</a> </li>
+        <li><a href="gallery.html" class="nav-link nav-active">GALLERY</a> </li>
+        <li><a href="about.html" class="nav-link">ABOUT US</a> </li>
+        <li><a href="contact.html" class="nav-link">CONTACT</a> </li>
+      </ul>
+      <div class="nav-logo">
+        <img src="img/Logo merah.png" alt="">
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="main-container">
+      <h1 class="myH1">Art and Photos</h1>
+      <div class="gallery-container">
+        <div class="gal gal-1">
+          <img src="img/gallery/000.10  Cloudy.jpg" alt="Cloudy">
+          <img src="img/gallery/002.12 Even Flow.jpg" alt="Even Flow">
+          <img src="img/gallery/023.01 Urbaniora.jpg" alt="Urbaniora">
+        </div>
+        <div class="gal gal-2">
+          <img src="img/gallery/122.05 Dream Canyon.jpg" alt="Dream Canyon" aria-checked="true">
+        </div>
+        <div class="gal gal-1">
+          <img src="img/gallery/011.22 Sun To Set.jpg" alt="Sun To Set">
+          <img src="img/gallery/055.03 Almost.jpg" alt="Almost">
+          <img src="img/gallery/032.11 The Sharpest.jpg" alt="The Sharpest">
+        </div>
+        <div class="gal gal-2">
+          <img src="img/gallery/330.02 Katana.jpg" alt="Katana" aria-checked="true">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" id="modal-dialog">
+      <div class="modal-header myH1" style="border: none;">
+        Art And Photos
+      </div>
+      <div class="modal-content-me" id="modal-content">
+        <div class="modal-showImg"></div>
+        <div class="modal-nameImg myP" id="name-img">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi delectus id quis explicabo sapiente ab. Debitis sapiente obcaecati nam in, nesciunt quod repudiandae odio placeat nihil fuga omnis ut et.</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      TIMUR ART GLOBAL &copy; 2020
+    </div>
+  </footer>
+
+  <script src="js/navbar-scroll.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("img").click(function() {
+        var srcImg = $(this).attr("src");
+        var nameImg = $(this).attr("alt");
+        var sizeCheck = $(this).attr("aria-checked");
+        console.log(sizeCheck);
+        console.log(nameImg);
+        $("#myModal").modal("show");
+        if(sizeCheck == "true") {
+          $("#modal-content").css("width", "50%");
+        } else {
+          $("#modal-content").css("width", "100%");
+        }
+        $(".modal-showImg").html("<img src='"+ srcImg +"' alt='modalImage' class='modal-img'> ");
+        $("#name-img").text(nameImg);
+      });
+    });
+  </script>
+</body>
+
+</html>

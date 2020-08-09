@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+nav {
+  font-family: "Helvetica";
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+nav .nav-container {
+  width: 1400px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+  padding: 0px 50px;
+}
+
+nav .nav-list {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+nav .nav-list li {
+  height: 100%;
+  list-style: none;
+  margin: 0px 5px;
+}
+
+nav .nav-list li .nav-link {
+  width: 130px;
+  height: 100%;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #444434;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.nav-active {
+  background-color: #b22424 !important;
+  color: white !important;
+  box-shadow: 0 10px 20px 0 rgba(146, 34, 34, 0.082), 0 12px 20px 0 rgba(156, 21, 21, 0.158);
+}
+
+.nav-logo img {
+  width: 70px;
+  height: 60px;
+}
+
+/* FONT */
+.myH1 {
+  font-family: "Dala Moa";
+  font-size: 5rem;
+  color: #b22424;
+}
+
+.myH2 {
+  font-family: "Dala Moa";
+  font-size: 3.8rem;
+  color: #b22424;
+}
+
+.myH3 {
+  font-family: "Dala Moa";
+  font-size: 2.2rem;
+  color: #b22424;
+}
+
+.myP {
+  font-family: "Helvetica";
+  color: #444343;
+}
+
+/* FORM */
+.myFormText {
+  border-radius: 10px;
+  border-color: #eae9e8;
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    height: auto;
+  }
+
+  .nav-container {
+    /* background-color: tomato; */
+    flex-direction: column;
+  }
+  
+  .nav-logo {
+    order: -1;
+  }
+
+  .nav-list {
+    align-items: stretch;
+  }
+
+  .nav-link {
+    width: 90px !important;
+    font-size: 0.5rem !important;
+    /* background-color: beige; */
+  }
+
+  .nav-logo {
+    padding: 10px;
+  }
+
+  .nav-logo img {
+    width: 50px;
+    height: 40px;
+  }
+
+  .myH1 {
+    font-size: 3.8rem;
+  }
+
+  .myH2 {
+    font-size: 2.5rem;
+  }
+
+  .myH3 {
+    font-size: 1.8rem;
+  }
+
+  .myP {
+    font-size: 0.6rem;
+  }
+}

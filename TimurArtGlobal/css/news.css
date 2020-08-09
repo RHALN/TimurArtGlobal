@@ -1,0 +1,131 @@
+main {
+  width: 100%;
+  margin-top: 100px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+main .main-container {
+  width: 1350px;
+  overflow: hidden;
+  padding: 40px 60px;
+  display: flex;
+}
+
+main .content-container {
+  flex: 6;
+  width: 100%;
+  /* background-color: khaki; */
+}
+
+main .content-container .banner {
+  width: 100%;
+  height: 40vh;
+  /* background-color: lightcoral; */
+  background-image: url(../img/news\ &\ event.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .banner .banner-text {
+  width: 50%;
+  /* background-color: khaki; */
+  color: #EAE9E8;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+main .content-container .card-container {
+  width: 100%;
+  padding: 40px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+main .sidebar {
+  flex: 2;
+  width: 100%;
+  /* background-color: lawngreen; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+main .sidebar .recent-container {
+  width: 12rem;
+  /* background-color: lightgray; */
+}
+
+/* BOOTSTRAP CONTENT */
+.card {
+  width: 15rem;
+  border: none;
+  margin: 20px 0px;
+  border-radius: none;
+}
+
+.card .card-img {
+  width: 100%;
+}
+
+.card .card-img img {
+  width: 100%;
+  height: auto;
+}
+
+.card .card-img img:hover {
+  /* transition: 0.5s; */
+  outline: 100px solid rgba(255, 255, 255, 0.239) !important;
+  outline-offset: -100px;
+}
+
+.card-body {
+  padding: 0;
+  padding-top: 25px;
+}
+
+.btn {
+  border-radius: 0;
+  background-color: #4343438e;
+  font-family: "Gotham";
+  font-weight: bold;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.btn:hover {  
+  background-color: #b22424;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .banner-text {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .card-container {
+    justify-content: center !important;
+  }
+
+  .card-container .card {
+    margin: 20px;
+  }
+
+  .sidebar {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}

@@ -1,0 +1,144 @@
+header {
+  margin-top: 100px;
+  width: 100%;
+  height: 50vh;
+  background-image: url(../img/about\ us.jpg);
+  background-position: bottom bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+header .header-container {
+  /* background-color: red; */
+  color: white;
+  width: 1350px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 100px;
+}
+
+header .header-title {
+  flex: 2;
+  color: white;
+  line-height: 60px;
+  text-align: left;
+  /* background-color: black; */
+}
+
+header .header-title img {
+  width: 100%;
+  height: auto;
+}
+
+header .header-text {
+  flex: 6;
+  margin: 0px 80px;
+  text-align: justify;
+  font-weight: bold;
+  color: white;
+}
+
+main {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+main .main-container {
+  width: 1350px;
+  /* background-color: skyblue; */
+  padding: 0px 100px;
+  display: flex;
+}
+
+main .content {
+  width: 100%;
+}
+
+main .content-1 {
+  /* background-color: slategray; */
+  margin-right: 25px;
+}
+
+main .content-1 .sejarah-text {
+  display: flex;
+  text-align: justify;
+}
+
+main .content-2 {
+  /* background-color: steelblue; */
+  margin-left: 25px;
+  width: 100%;
+  display: flex;
+  text-align: justify;
+}
+
+main .content-2 .visi {
+  flex: 2;
+  /* background-color: red; */
+}
+
+main .content-2 .misi {
+  flex: 2;
+  /* background-color: blue; */
+}
+
+/* POSITION */
+.left {
+  margin-right: 15px;
+}
+
+.right {
+  margin-left: 15px;
+}
+
+.myH2 {
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+  background-image: url(../img/about\ us.jpg);
+  background-position: center bottom;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-container {
+    flex-direction: column;
+    padding: 25px !important;
+  }
+
+  .content-1 {
+    margin: 0 !important;
+  }
+
+  .content-2 {
+    margin: 0 !important;
+    margin-top: 40px !important;
+  }
+
+  .header-container {
+    flex-direction: column;
+    /* background-color: violet; */
+  }
+
+  .header-title {
+    width: 30%;
+    margin-bottom: 20px;
+    flex: unset !important;
+    /* background-color: yellow; */
+  }
+
+  .header-text {
+    width: 100%;
+    flex: unset !important;
+    margin: 0px !important;
+    /* background-color: rgb(216, 85, 85); */
+  }
+}

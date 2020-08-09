@@ -1,0 +1,169 @@
+main {
+  width: 100%;
+  margin-top: 100px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+main .main-container {
+  width: 1350px;
+  overflow: hidden;
+  padding: 40px 60px;
+  display: flex;
+}
+
+main .content-container {
+  flex: 6;
+  width: 100%;
+  /* background-color: khaki; */
+}
+
+main .header-container {
+  margin-top: 30px;
+}
+
+main .content-container .banner {
+  width: 100%;
+  /* height: 500px; */
+  /* background-color: lightcoral; */
+}
+
+main .banner img {
+  width: 100%;
+  height: auto;
+}
+
+main .article-container {
+  margin-top: 40px;
+  display: flex;
+}
+
+main .article-container .article {
+  text-align: justify;
+  font-family: "Helvetica";
+  font-size: 0.8rem;
+  color: #444343;
+}
+
+main .article-container .article-1 {
+  flex: 5;
+  margin-right: 15px;
+  /* background-color: skyblue; */
+}
+
+main .article-container .article-2 {
+  flex: 5;
+  margin-left: 15px;
+  /* background-color: tan; */
+}
+
+main .reply-container {
+  margin: 100px 0px;
+}
+
+main .reply-container input {
+  width: 100%;
+}
+
+main .reply-container h2 {
+  color: #444343;
+}
+
+main .related-container {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+
+/* CARD CONTAINER */
+main .content-container .card-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card .card-img img:hover {
+  /* transition: 0.5s; */
+  outline: 100px solid rgba(255, 255, 255, 0.239) !important;
+  outline-offset: -100px;
+}
+
+main .sidebar {
+  flex: 2;
+  width: 100%;
+  /* background-color: lawngreen; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+main .sidebar .recent-container {
+  width: 12rem;
+  /* background-color: lightgray; */
+}
+
+/* BOOTSTRAP CONTENT */
+.card {
+  width: 15rem;
+  border: none;
+  margin: 20px 0px;
+  border-radius: none;
+}
+
+.card .card-img {
+  width: 100%;
+}
+
+.card .card-img img {
+  width: 100%;
+  height: auto;
+}
+
+.card .card-body {
+  padding: 0;
+  padding-top: 25px;
+}
+
+.btn {
+  border-radius: 0;
+  background-color: #4343438e;
+  font-family: "Gotham";
+  font-weight: bold;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.btn:hover {  
+  background-color: #b22424;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .header-container {
+    margin-top: -20px !important;
+  }
+
+  .related-container {
+    justify-content: center;
+  }
+
+  .card-container {
+    justify-content: center !important;
+  }
+
+  .card-container .card {
+    margin: 20px;
+  }
+
+  .sidebar {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
