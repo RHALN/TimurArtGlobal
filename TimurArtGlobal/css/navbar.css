@@ -150,3 +150,11 @@ nav .nav-list li .nav-link {
     font-size: 0.6rem;
   }
 }
+
+@media screen and (max-width: 414px) {
+  .nav-link {
+    padding: 5px !important;
+    width: 70px !important;
+    text-align: center;
+  }
+}
