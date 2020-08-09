@@ -1,7 +1,7 @@
 header {
-  margin-top: 80px;
+  margin-top: 70px;
   width: 100%;
-  height: 45vh;
+  height: 50vh;
   background-image: url(../img/Home.jpg);
   background-position: bottom bottom;
   background-size: cover;
@@ -21,7 +21,7 @@ header .header-container {
 header .header-logo {
   width: 30%;
   /* background-color: teal; */
-  padding: 10px 40px;
+  padding: 10px 60px;
 }
 
 header .header-logo img {
@@ -48,7 +48,6 @@ main .main-container {
 main .main-container .content {
   width: 60%;
   /* background-color: red; */
-  padding: 10px;
   display: flex;
   justify-content: center;
 }
@@ -91,11 +90,16 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
+  header {
+    margin-top: 100px;
+  }
+
   .header-container {
     justify-content: center !important;
   }
+
   .header-logo {
-    width: 60% !important;
+    width: 300px !important;
   }
 
   .content {
