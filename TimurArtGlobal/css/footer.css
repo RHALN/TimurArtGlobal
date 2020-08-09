@@ -16,4 +16,11 @@ footer .footer-container {
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  font-size: 0.7rem;
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    position: unset;
+  }
 }
