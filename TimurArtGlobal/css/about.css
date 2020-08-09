@@ -1,7 +1,7 @@
 header {
-  margin-top: 100px;
+  margin-top: 80px;
   width: 100%;
-  height: 50vh;
+  height: 30vh;
   background-image: url(../img/about\ us.jpg);
   background-position: bottom bottom;
   background-size: cover;
@@ -12,19 +12,17 @@ header {
 header .header-container {
   /* background-color: red; */
   color: white;
-  width: 1350px;
+  width: 1270px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 100px;
+  padding: 40px 140px;
 }
 
 header .header-title {
   flex: 2;
   color: white;
-  line-height: 60px;
-  text-align: left;
   /* background-color: black; */
 }
 
@@ -43,26 +41,25 @@ header .header-text {
 
 main {
   width: 100%;
-  margin-top: 30px;
-  margin-bottom: 60px;
   display: flex;
   justify-content: center;
 }
 
 main .main-container {
-  width: 1350px;
+  width: 1270px;
   /* background-color: skyblue; */
   padding: 0px 100px;
   display: flex;
 }
 
 main .content {
+  margin-top: 10px;
   width: 100%;
 }
 
 main .content-1 {
   /* background-color: slategray; */
-  margin-right: 25px;
+  margin-right: 15px;
 }
 
 main .content-1 .sejarah-text {
@@ -72,7 +69,7 @@ main .content-1 .sejarah-text {
 
 main .content-2 {
   /* background-color: steelblue; */
-  margin-left: 25px;
+  margin-left: 15px;
   width: 100%;
   display: flex;
   text-align: justify;
@@ -90,15 +87,15 @@ main .content-2 .misi {
 
 /* POSITION */
 .left {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .right {
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .myH2 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* FOOTER */
@@ -123,16 +120,20 @@ footer {
     margin-top: 40px !important;
   }
 
+  header {
+    margin-top: 110px !important;
+    height: 40vh;
+  }
+
   .header-container {
-    flex-direction: column;
-    /* background-color: violet; */
+    padding: 25px !important;
   }
 
   .header-title {
     width: 30%;
-    margin-bottom: 20px;
-    flex: unset !important;
     /* background-color: yellow; */
+    display: none;
+    flex: unset !important;
   }
 
   .header-text {
