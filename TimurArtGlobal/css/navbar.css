@@ -48,9 +48,9 @@ nav .nav-list li {
 }
 
 nav .nav-list li .nav-link {
-  width: 130px;
+  width: 110px;
   height: 100%;
-  padding: 20px 10px;
+  padding: 20px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,6 +58,7 @@ nav .nav-list li .nav-link {
   color: #444434;
   font-weight: bold;
   font-size: 0.6rem;
+  /* background-color: violet; */
 }
 
 .nav-active {
@@ -74,25 +75,26 @@ nav .nav-list li .nav-link {
 /* FONT */
 .myH1 {
   font-family: "Dala Moa";
-  font-size: 5rem;
+  font-size: 4rem;
   color: #b22424;
 }
 
 .myH2 {
   font-family: "Dala Moa";
-  font-size: 3.8rem;
+  font-size: 3.1rem;
   color: #b22424;
 }
 
 .myH3 {
   font-family: "Dala Moa";
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #b22424;
 }
 
 .myP {
   font-family: "Helvetica";
   color: #444343;
+  font-size: 0.7rem;
 }
 
 /* FORM */
@@ -135,19 +137,19 @@ nav .nav-list li .nav-link {
   }
 
   .myH1 {
-    font-size: 3.8rem;
+    font-size: 2.8rem;
   }
 
   .myH2 {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
   }
 
   .myH3 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 
   .myP {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 
